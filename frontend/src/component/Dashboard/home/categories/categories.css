@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.category-list {
+    background: #ffffff;
+    padding: 80px 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.category-list h2 {
+    text-align: center;
+    color: #2d3436;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
+}
+
+.category-main {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.category-main img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 6px solid #fff;
+    object-fit: cover;
+}
+
+.category-main img:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(255, 71, 87, 0.2);
+    border-color: #ff4757;
+}
+
+.category-main p {
+    text-align: center;
+    color: #2d3436;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.category-item:hover p {
+    color: #ff4757;
+}
+
+/* Category Sections */
+.indi-css {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.indi-css h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2d3436;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.indi-css h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 6px;
+    background: linear-gradient(90deg, #ff4757, #ffa502);
+    border-radius: 3px;
+}
+
+/* Horizontal Scroll Container */
+.card-image, .itali-card-image, .korean-card-image {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 30px 10px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-image::-webkit-scrollbar {
+    display: none;
+}
+
+/* Professional Food Card */
+.Perslide {
+    min-width: 280px;
+    max-width: 280px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    border: 1px solid #f1f2f6;
+    cursor: pointer;
+}
+
+.Perslide:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: rgba(255, 71, 87, 0.2);
+}
+
+.Perslide img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.Perslide p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 8px;
+}
+
+.Perslide small {
+    display: block;
+    color: #747d8c;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    height: 38px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.Perslide span {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ff4757;
+}
+
+.slide-cart-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    background: #f1f2f6;
+    color: #2d3436;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-cart-button:hover {
+    background: #ff4757;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Arrow Navigation */
+.main-image {
+    position: relative;
+}
+
+.leftImageArrowStyles, .rightImageArrowStyles {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #2d3436;
+}
+
+.leftImageArrowStyles:hover, .rightImageArrowStyles:hover {
+    background: #ff4757;
+    color: #fff;
+}
+
+.leftImageArrowStyles { left: 20px; }
+.rightImageArrowStyles { right: 20px; }
+
+.imsa {
+    min-width: 150px;
+    height: 200px;
+    border: 2px dashed #ff4757;
+    border-radius: 24px;
+    background: transparent;
+    color: #ff4757;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imsa:hover {
+    background: rgba(255, 71, 87, 0.05);
+    transform: scale(1.02);
+}
+
+/* Single Dish Page Styles */
+.sfp-wrapper {
+    background: #ffffff;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.sfp-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f2f6;
+    border: none;
+    color: #2d3436;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: #e2e4e9;
+    transform: translateX(-5px);
+}
+
+.sfp-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.sfp-image-section {
+    flex: 1;
+}
+
+.sfp-image-card {
+    background: #fff;
+    padding: 12px;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+    border: 1px solid #f1f2f6;
+}
+
+.sfp-image-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.sfp-details-section {
+    flex: 1;
+}
+
+.category-badge {
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sfp-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2d3436;
+    margin: 15px 0 5px 0;
+    letter-spacing: -1.5px;
+}
+
+.portion-tag {
+    color: #747d8c;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sfp-price-row {
+    margin: 25px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.currency {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff4757;
+}
+
+.price-value {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2d3436;
+}
+
+.sfp-info-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.info-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.info-icon {
+    color: #ff4757;
+    margin-top: 2px;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 15px;
+    color: #2d3436;
+    margin-bottom: 2px;
+}
+
+.info-item p {
+    color: #747d8c;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.sfp-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.sfp-add-btn, .sfp-order-btn {
+    flex: 1;
+    height: 55px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.sfp-add-btn {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.sfp-add-btn:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+.sfp-order-btn {
+    background: #ff4757;
+    color: #fff;
+}
+
+.sfp-order-btn:hover {
+    background: #ff6b81;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 71, 87, 0.2);
+}
+
+@media (max-width: 968px) {
+    .sfp-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sfp-image-card img {
+        height: 300px;
+    }
+    .sfp-header h1 {
+        font-size: 32px;
+    }
+}

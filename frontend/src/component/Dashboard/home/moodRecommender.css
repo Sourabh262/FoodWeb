@@ -1,0 +1,135 @@
+.mood-section {
+    padding: 60px 20px;
+    background: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+}
+
+.mood-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mood-header h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.mood-header p {
+    color: #747d8c;
+    font-size: 16px;
+}
+
+.mood-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.mood-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    width: 120px;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    background: var(--mood-bg);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mood-btn .mood-icon {
+    color: var(--mood-color);
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+.mood-btn span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2d3436;
+}
+
+.mood-btn:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.mood-btn.active {
+    border-color: var(--mood-color);
+    transform: scale(1.05);
+}
+
+.recommendations-area {
+    animation: fadeIn 0.5s ease;
+}
+
+.rec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.rec-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #f1f2f6;
+}
+
+.rec-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.rec-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.rec-info {
+    padding: 15px;
+}
+
+.rec-info h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.rec-info p {
+    margin: 0;
+    color: #ff4757;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .mood-btn {
+        width: 100px;
+        padding: 15px;
+    }
+}
